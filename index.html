@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="MR Rahmani, étudiant développeur web à Le Mans Université. Découvrez mon portfolio, mes projets et mes compétences en HTML, CSS, JavaScript et plus.">
+        <meta name="author" content="">
+        <title>MR Rahmani – Développeur Web | Portfolio Le Mans</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+        <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+        <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        <noscript>
+          <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+        </noscript>
+        <link href="css/styles.css" rel="stylesheet" >
+
+        <!-- ── ADDED styles only — nothing overrides existing ── -->
+        <style>
+            .skill-card-custom {
+                background: #fff;
+                border: 1px solid #e9ecef;
+                border-radius: 1rem;
+                padding: 1.5rem 1.25rem;
+                text-align: center;
+                transition: transform 0.18s ease, box-shadow 0.18s ease;
+            }
+            .skill-card-custom:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+            }
+            .skill-icon-wrap {
+                width: 52px;
+                height: 52px;
+                border-radius: 14px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 0.85rem;
+            }
+            .skill-title {
+                font-size: 0.88rem;
+                font-weight: 700;
+                color: #212529;
+                margin-bottom: 2px;
+            }
+            .skill-sub {
+                font-size: 0.75rem;
+                color: #9ca3af;
+            }
+            .qlink-card {
+                background: #fff;
+                border: 1px solid #e9ecef;
+                border-radius: 1rem;
+                padding: 1.5rem;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                transition: transform 0.18s ease, box-shadow 0.18s ease;
+                color: inherit;
+            }
+            .qlink-card:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+                color: inherit;
+                text-decoration: none;
+            }
+            .qlink-icon {
+                width: 48px;
+                height: 48px;
+                border-radius: 12px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+            }
+            .qlink-title {
+                font-size: 0.95rem;
+                font-weight: 700;
+                color: #212529;
+                margin-bottom: 2px;
+            }
+            .qlink-sub {
+                font-size: 0.78rem;
+                color: #9ca3af;
+                margin: 0;
+            }
+            .qlink-arrow {
+                margin-left: auto;
+                color: #9ca3af;
+                font-size: 1rem;
+                transition: transform 0.18s ease, color 0.18s;
+            }
+            .qlink-card:hover .qlink-arrow {
+                transform: translate(3px, -3px);
+                color: #6c757d;
+            }
+            .stat-box {
+                text-align: center;
+                padding: 1.5rem 1rem;
+            }
+            .stat-num {
+                font-size: 2.4rem;
+                font-weight: 800;
+                line-height: 1;
+                margin-bottom: 4px;
+            }
+            .stat-label {
+                font-size: 0.78rem;
+                color: #9ca3af;
+                font-weight: 500;
+                text-transform: uppercase;
+                letter-spacing: 0.05em;
+            }
+            .section-eyebrow {
+                font-size: 0.72rem;
+                font-weight: 700;
+                letter-spacing: 0.12em;
+                text-transform: uppercase;
+                color: #9ca3af;
+                margin-bottom: 0.4rem;
+            }
+        </style>
+        <!-- ── END ADDED styles ── -->
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+
+            <!-- Navigation — UNCHANGED -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">MR Rahmani – Développeur Web</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                            <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                            <li class="nav-item"><a class="nav-link" href="projects.html">Projets</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Header — UNCHANGED structure, real content -->
+            <header class="py-5">
+                <div class="container px-5 pb-5">
+                    <div class="row gx-5 align-items-center">
+                        <div class="col-xxl-5">
+                            <div class="text-center text-xxl-start">
+                                <div class="badge bg-gradient-primary-to-secondary text-white mb-4"><div class="text-uppercase">Design &middot; Development &middot; Marketing</div></div>
+                                <div class="fs-3 fw-light text-muted">étudiant en informatique à</div>
+                                <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">Le Mans Université</span></h1>
+                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
+                                    <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="resume.html">Resume</a>
+                                    <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="projects.html">Projets</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-7">
+                            <div class="d-flex justify-content-center mt-5 mt-xxl-0">
+                                <div class="profile bg-gradient-primary-to-secondary">
+                                    <img class="profile-img" src="assets/images.webp" alt="MR Rahmani, étudiant développeur web à Le Mans Université" loading="eager" fetchpriority="high" decoding="async">
+                                    <div class="dots-1"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 191.6 1215.4" style="enable-background:new 0 0 191.6 1215.4" xml:space="preserve"><g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"><path d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C383.7,12801.6,289.7,12808.6,227.7,12788.6z"/><path d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z"/><path d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C383.7,11521.6,289.7,11528.6,227.7,11508.6z"/><path d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z"/><path d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C383.7,10241.6,289.7,10248.6,227.7,10228.6z"/><path d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z"/><path d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C383.7,8961.6,289.7,8968.6,227.7,8948.6z"/><path d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z"/><path d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C383.7,7681.6,289.7,7688.6,227.7,7668.6z"/><path d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z"/><path d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C383.7,6401.6,289.7,6408.6,227.7,6388.6z"/><path d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z"/><path d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C383.7,5121.6,289.7,5128.6,227.7,5108.6z"/><path d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z"/><path d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C383.7,3841.6,289.7,3848.6,227.7,3828.6z"/><path d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z"/><path d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C383.7,2561.6,289.7,2568.6,227.7,2548.6z"/><path d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z"/><path d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C383.7,1281.6,289.7,1288.6,227.7,1268.6z"/><path d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z"/></g></svg></div>
+                                    <div class="dots-2"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 191.6 1215.4" style="enable-background:new 0 0 191.6 1215.4" xml:space="preserve"><g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"><path d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C383.7,12801.6,289.7,12808.6,227.7,12788.6z"/><path d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z"/><path d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C383.7,11521.6,289.7,11528.6,227.7,11508.6z"/><path d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z"/><path d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C383.7,10241.6,289.7,10248.6,227.7,10228.6z"/><path d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z"/><path d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C383.7,8961.6,289.7,8968.6,227.7,8948.6z"/><path d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z"/><path d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C383.7,7681.6,289.7,7688.6,227.7,7668.6z"/><path d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z"/><path d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C383.7,6401.6,289.7,6408.6,227.7,6388.6z"/><path d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z"/><path d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C383.7,5121.6,289.7,5128.6,227.7,5108.6z"/><path d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z"/><path d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C383.7,3841.6,289.7,3848.6,227.7,3828.6z"/><path d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z"/><path d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C383.7,2561.6,289.7,2568.6,227.7,2548.6z"/><path d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z"/><path d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C383.7,1281.6,289.7,1288.6,227.7,1268.6z"/><path d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z"/></g></svg></div>
+                                    <div class="dots-3"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 191.6 1215.4" style="enable-background:new 0 0 191.6 1215.4" xml:space="preserve"><g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"><path d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C383.7,12801.6,289.7,12808.6,227.7,12788.6z"/><path d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z"/><path d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C383.7,11521.6,289.7,11528.6,227.7,11508.6z"/><path d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z"/><path d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C383.7,10241.6,289.7,10248.6,227.7,10228.6z"/><path d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z"/><path d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C383.7,8961.6,289.7,8968.6,227.7,8948.6z"/><path d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z"/><path d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C383.7,7681.6,289.7,7688.6,227.7,7668.6z"/><path d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z"/><path d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C383.7,6401.6,289.7,6408.6,227.7,6388.6z"/><path d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z"/><path d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C383.7,5121.6,289.7,5128.6,227.7,5108.6z"/><path d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z"/><path d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C383.7,3841.6,289.7,3848.6,227.7,3828.6z"/><path d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z"/><path d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C383.7,2561.6,289.7,2568.6,227.7,2548.6z"/><path d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z"/><path d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C383.7,1281.6,289.7,1288.6,227.7,1268.6z"/><path d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z"/></g></svg></div>
+                                    <div class="dots-4"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 191.6 1215.4" style="enable-background:new 0 0 191.6 1215.4" xml:space="preserve"><g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"><path d="M227.7,12788.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C383.7,12801.6,289.7,12808.6,227.7,12788.6z"/><path d="M1507.7,12788.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262C1663.7,12801.6,1569.7,12808.6,1507.7,12788.6z"/><path d="M227.7,11508.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C383.7,11521.6,289.7,11528.6,227.7,11508.6z"/><path d="M1507.7,11508.6c-151-50-253-216-222-362c25-119,136-230,254-255c194-41,395,142,375,339c-11,105-90,213-190,262C1663.7,11521.6,1569.7,11528.6,1507.7,11508.6z"/><path d="M227.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C383.7,10241.6,289.7,10248.6,227.7,10228.6z"/><path d="M1507.7,10228.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C1663.7,10241.6,1569.7,10248.6,1507.7,10228.6z"/><path d="M227.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C383.7,8961.6,289.7,8968.6,227.7,8948.6z"/><path d="M1507.7,8948.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C1663.7,8961.6,1569.7,8968.6,1507.7,8948.6z"/><path d="M227.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C383.7,7681.6,289.7,7688.6,227.7,7668.6z"/><path d="M1507.7,7668.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C1663.7,7681.6,1569.7,7688.6,1507.7,7668.6z"/><path d="M227.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C383.7,6401.6,289.7,6408.6,227.7,6388.6z"/><path d="M1507.7,6388.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C1663.7,6401.6,1569.7,6408.6,1507.7,6388.6z"/><path d="M227.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C383.7,5121.6,289.7,5128.6,227.7,5108.6z"/><path d="M1507.7,5108.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C1663.7,5121.6,1569.7,5128.6,1507.7,5108.6z"/><path d="M227.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C383.7,3841.6,289.7,3848.6,227.7,3828.6z"/><path d="M1507.7,3828.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C1663.7,3841.6,1569.7,3848.6,1507.7,3828.6z"/><path d="M227.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C383.7,2561.6,289.7,2568.6,227.7,2548.6z"/><path d="M1507.7,2548.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C1663.7,2561.6,1569.7,2568.6,1507.7,2548.6z"/><path d="M227.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C383.7,1281.6,289.7,1288.6,227.7,1268.6z"/><path d="M1507.7,1268.6c-105-35-200-141-222-248c-43-206,163-412,369-369c155,32,275,190,260,339c-11,105-90,213-190,262C1663.7,1281.6,1569.7,1288.6,1507.7,1268.6z"/></g></svg></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- About Section — UNCHANGED structure, real content -->
+            <section class="bg-light py-5">
+                <div class="container px-5">
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-xxl-8">
+                            <div class="text-center my-5">
+                                <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">About Me</span></h2>
+                                <p class="lead fw-light mb-4">Étudiant en Licence Informatique à Le Mans Université.</p>
+                                <p class="text-muted">Titulaire d'un Bac Pro MELEC, j'ai acquis des bases solides en électricité et systèmes connectés avant de me tourner vers l'informatique. Passionné par le développement web, Linux et la création d'interfaces propres, je construis des projets concrets pour progresser chaque jour.</p>
+                                <div class="d-flex justify-content-center fs-2 gap-4 mt-4">
+                                    <a class="text-gradient" href="https://github.com/WebForgeDev1/" target="_blank" aria-label="GitHub de MR Rahmani"><i class="bi bi-github"></i></a>
+                                    <a class="text-gradient" href="https://www.linkedin.com/in/mujeeb-rahaman-rahmani/" target="_blank" aria-label="linkedin de MR Rahmani"><i class="bi bi-linkedin"></i></a>
+                                    <a class="text-gradient" href="contact.html" aria-label="Envoyer un message"><i class="bi bi-envelope"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ── ADDED: Stats ── -->
+                    <div class="row gx-5 justify-content-center mb-2">
+                        <div class="col-xxl-8">
+                            <div class="row text-center g-0 border rounded-3 bg-white overflow-hidden">
+                                <div class="col-4 stat-box border-end">
+                                    <div class="stat-num text-gradient">0<span style="font-size:1.4rem">+</span></div>
+                                    <div class="stat-label">ans en entreprise</div>
+                                </div>
+                                <div class="col-4 stat-box border-end">
+                                    <div class="stat-num text-gradient">3<span style="font-size:1.4rem">+</span></div>
+                                    <div class="stat-label">langages</div>
+                                </div>
+                                <div class="col-4 stat-box">
+                                    <div class="stat-num text-gradient">3<span style="font-size:1.4rem">+</span></div>
+                                    <div class="stat-label">projets réalisés</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ── END ADDED ── -->
+                </div>
+            </section>
+
+            <!-- ── ADDED: Skills Section ── -->
+            <section class="py-5">
+                <div class="container px-5">
+                    <div class="text-center mb-5">
+                        <p class="section-eyebrow">Ce que je maîtrise</p>
+                        <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">Compétences</span></h2>
+                    </div>
+                    <div class="row gx-4 gy-4 justify-content-center">
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="skill-card-custom">
+                                <div class="skill-icon-wrap" style="background:#fff4f1;">
+                                    <svg width="26" height="26" viewBox="0 0 32 32" fill="none"><path d="M4 4l2.5 22L16 29l9.5-3L28 4H4z" fill="#E34F26"/><path d="M16 27l7.7-2.1 2-18.9H16v21z" fill="#EF652A"/><path d="M16 12.5h-4l-.3-3.5H16v-3H8l.8 9H16v-2.5zM16 19.5l-.05.01-3.3-.9-.2-2.6h-3l.4 4.5 6.1 1.7.05-.01V19.5z" fill="white"/><path d="M16 12.5v2.5h3.5l-.4 4-3.1.85v3.17l6.15-1.7.45-5.02.45-4.8H16z" fill="white"/></svg>
+                                </div>
+                                <div class="skill-title">HTML &amp; CSS</div>
+                                <div class="skill-sub">Langages web</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="skill-card-custom">
+                                <div class="skill-icon-wrap" style="background:#fffce0;">
+                                    <svg width="26" height="26" viewBox="0 0 32 32" fill="none"><rect x="3" y="3" width="26" height="26" rx="3" fill="#F7DF1E"/><path d="M20.5 22.5c.5.9 1.2 1.5 2.3 1.5 1 0 1.6-.5 1.6-1.2 0-.8-.6-1.1-1.7-1.6l-.6-.2c-1.7-.7-2.7-1.6-2.7-3.5 0-1.7 1.3-3 3.4-3 1.5 0 2.5.5 3.2 1.8l-1.8 1.1c-.4-.7-.8-1-1.4-1-.7 0-1.1.4-1.1 1 0 .7.4 1 1.5 1.5l.6.2c2 .8 3 1.7 3 3.6 0 2.1-1.6 3.2-3.8 3.2-2.1 0-3.5-1-4.2-2.4l1.7-1zM12.5 22.7c.3.6.6 1.1 1.3 1.1.7 0 1.1-.3 1.1-1.3V15h2.2v7.6c0 2.1-1.2 3.1-3 3.1-1.6 0-2.5-.8-3-1.8l1.4-.9z" fill="#1A1A1A"/></svg>
+                                </div>
+                                <div class="skill-title">JavaScript</div>
+                                <div class="skill-sub">Scripting web</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="skill-card-custom">
+                                <div class="skill-icon-wrap" style="background:#eef4fb;">
+                                    <svg width="26" height="26" viewBox="0 0 32 32" fill="none"><path d="M16 3L3 9v14l13 6 13-6V9L16 3z" fill="#5595CE"/><path d="M16 3v24M3 9l13 6M29 9l-13 6" stroke="#3374A6" stroke-width="1.2"/><circle cx="16" cy="15" r="3" fill="#1A4B72"/></svg>
+                                </div>
+                                <div class="skill-title">C</div>
+                                <div class="skill-sub">Programmation système</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="skill-card-custom">
+                                <div class="skill-icon-wrap" style="background:#f0faf6;">
+                                    <svg width="26" height="26" viewBox="0 0 32 32" fill="none"><rect x="3" y="4" width="26" height="24" rx="3" fill="#1A2B2A"/><path d="M8 12l5 4-5 4M15 22h9" stroke="#7DD4B8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </div>
+                                <div class="skill-title">Bash / Unix</div>
+                                <div class="skill-sub">Shell scripting</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="skill-card-custom">
+                                <div class="skill-icon-wrap" style="background:#fff8ee;">
+                                    <svg width="26" height="26" viewBox="0 0 32 32" fill="none"><rect x="4" y="4" width="24" height="24" rx="3" fill="#1C1C2E"/><rect x="8" y="10" width="7" height="7" rx="1" fill="#F4C97A"/><rect x="17" y="10" width="7" height="7" rx="1.5" stroke="#F4C97A" stroke-width="1.3" fill="none"/><rect x="8" y="19" width="7" height="5" rx="1" fill="none" stroke="#F4C97A" stroke-width="1.3"/><rect x="17" y="19" width="7" height="5" rx="1" fill="#F4C97A" opacity="0.4"/></svg>
+                                </div>
+                                <div class="skill-title">Figma</div>
+                                <div class="skill-sub">UI / UX Design</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-2">
+                            <div class="skill-card-custom">
+                                <div class="skill-icon-wrap" style="background:#f3f0ff;">
+                                    <svg width="26" height="26" viewBox="0 0 32 32" fill="none"><rect x="4" y="4" width="24" height="24" rx="3" fill="#1A1A2E"/><text x="16" y="22" font-family="monospace" font-size="10" font-weight="bold" fill="#A078FF" text-anchor="middle">ASM</text></svg>
+                                </div>
+                                <div class="skill-title">Assembleur</div>
+                                <div class="skill-sub">Bas niveau</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ── END Skills ── -->
+
+            <!-- ── ADDED: Quick Links Section ── -->
+            <section class="bg-light py-5">
+                <div class="container px-5">
+                    <div class="text-center mb-5">
+                        <p class="section-eyebrow">Navigation rapide</p>
+                        <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">Explorer</span></h2>
+                    </div>
+                    <div class="row gx-4 gy-4 justify-content-center">
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <a href="resume.html" class="qlink-card">
+                                <div class="qlink-icon" style="background:#eef3ff;"><i class="bi bi-file-text" style="color:#4361ee;font-size:1.25rem;"></i></div>
+                                <div><div class="qlink-title">Resume</div><p class="qlink-sub">Formations &amp; expériences</p></div>
+                                <i class="bi bi-arrow-up-right qlink-arrow"></i>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <a href="projects.html" class="qlink-card">
+                                <div class="qlink-icon" style="background:#edfcf4;"><i class="bi bi-grid" style="color:#2ec4b6;font-size:1.25rem;"></i></div>
+                                <div><div class="qlink-title">Projets</div><p class="qlink-sub">Mes réalisations &amp; code</p></div>
+                                <i class="bi bi-arrow-up-right qlink-arrow"></i>
+                            </a>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <a href="contact.html" class="qlink-card">
+                                <div class="qlink-icon" style="background:#fff8ee;"><i class="bi bi-envelope" style="color:#f4a261;font-size:1.25rem;"></i></div>
+                                <div><div class="qlink-title">Contact</div><p class="qlink-sub">Me contacter directement</p></div>
+                                <i class="bi bi-arrow-up-right qlink-arrow"></i>
+                            </a>
+                        </div>
+
+
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <a href="https://github.com/WebForgeDev1/" class="qlink-card">
+                                <div class="qlink-icon" style="background:#f3f0ff;"><i class="bi bi-github" style="color:#7c3aed;font-size:1.25rem;"></i></div>
+                                <div><div class="qlink-title">GitHub</div><p class="qlink-sub">Voir mon code source</p></div>
+                                <i class="bi bi-arrow-up-right qlink-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ── END Quick Links ── -->
+
+        </main>
+
+        <!-- Footer -->
+<footer class="bg-white py-5 mt-auto border-top">
+  <div class="container px-5">
+    <div class="row g-5 pb-4 border-bottom mb-4">
+
+      <!-- Brand col -->
+      <div class="col-lg-5">
+        <div class="fw-bolder text-primary fs-5 mb-2">MR Rahmani – Développeur Web</div>
+        <p class="text-muted small mb-3" style="max-width:260px;">
+          Développeur passionné, disponible pour de nouveaux projets et collaborations.
+        </p>
+        <span class="badge rounded-pill px-3 py-2" style="background:#e8f5e9; color:#2e7d32; font-size:12px;">
+           Disponible pour travailler
+        </span>
+        <div class="d-flex gap-2 mt-3">
+            <a href="https://www.linkedin.com/in/mujeeb-rahaman-rahmani/" target="_blank" aria-label="linkedin de MR Rahmani" class="btn btn-outline-secondary btn-sm rounded-2 p-2"><i class="bi bi-linkedin"></i></a>
+             <a href="https://www.instagram.com/mujeebullah_rahmani_afg/" target="_blank" aria-label="Instagram de MR Rahmani" class="btn btn-outline-secondary btn-sm rounded-2 p-2"><i class="bi bi-instagram"></i></a>
+            <a href="https://github.com/WebForgeDev1/" target="_blank" aria-label="GitHub de MR Rahmani" class="btn btn-outline-secondary btn-sm rounded-2 p-2"><i class="bi bi-github"></i></a>
+          <a href="mailto:rahmani.mujeeb@outlook.com" target="_blank" aria-label="Envoyer un message" class="btn btn-outline-secondary btn-sm rounded-2 p-2"><i class="bi bi-envelope"></i></a>
+        </div>
+      </div>
+
+      <!-- Nav col -->
+      <div class="col-6 col-lg-3">
+        <p class="text-uppercase fw-bold small text-muted mb-3" style="letter-spacing:.08em; font-size:11px;">Navigation</p>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a class="text-decoration-none fw-semibold text-dark small" href="index.html">Accueil</a></li>
+          <li class="mb-2"><a class="text-decoration-none fw-semibold text-dark small" href="resume.html">Resume</a></li>
+          <li class="mb-2"><a class="text-decoration-none fw-semibold text-dark small" href="projects.html">Projets</a></li>
+          <li class="mb-2"><a class="text-decoration-none fw-semibold text-dark small" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact col -->
+      <div class="col-6 col-lg-4">
+        <p class="text-uppercase fw-bold small text-muted mb-3" style="letter-spacing:.08em; font-size:11px;">Contact</p>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a class="text-decoration-none fw-semibold text-dark small" href="mailto:rahmani.mujeeb@outlook.com">rahmani.mujeeb@outlook.com</a></li>
+          <li class="mb-2"><a class="text-decoration-none fw-semibold text-dark small" href="#">Le Mans, France</a></li>
+          <li class="mb-2"><a class="text-decoration-none fw-semibold text-dark small" href="contact.html">Contactez-moi</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+      <p class="small text-muted m-0">© 2026 MR Rahmani – Développeur Web. Tous droits réservés.</p>
+      <div class="d-flex gap-3">
+        <a class="small text-muted text-decoration-none" href="confidentialite.html">Confidentialité</a>
+        <a class="small text-muted text-decoration-none" href="conditions.html">Conditions</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
